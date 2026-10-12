@@ -1,10 +1,4 @@
-/**
- * AL BARIUL - PORTFOLIO INTERACTIVITY & LOGIC
- * Mobile drawer, project details modal, scroll spy, contact form
- */
-
 document.addEventListener('DOMContentLoaded', () => {
-
 
   // --- 2. NAVBAR SCROLL EFFECT & ACTIVE LINK HIGHLIGHTING ---
   const headerEl = document.getElementById('header');
