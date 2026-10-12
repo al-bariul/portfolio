@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al Bariul | Frontend & Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Al Bariul - Frontend Developer & Web Developer specializing in JavaScript, React.js, Tailwind CSS, and modern interactive web experiences." />
+  <meta name="keywords" content="Al Bariul, Frontend Developer, Web Developer, React, JavaScript, Portfolio, Rajshahi" />
+  <meta name="author" content="Al Bariul" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/profile.jpg" />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light antialiased">
+
+  <!-- Background Ambient Glows -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar-wrapper" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Al Bariul Home">
+        <span class="logo-accent">&lt;</span>Al Bariul<span class="logo-accent"> /&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action Button -->
+      <div class="nav-actions">
+        <a href="Al_Bariul_Resume.pdf" download="Al_Bariul_Resume.pdf" class="btn btn-outline btn-sm nav-cv-btn">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-hire-btn">Hire Me</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#projects" class="mobile-nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="Al_Bariul_Resume.pdf" download="Al_Bariul_Resume.pdf" class="btn btn-primary w-full">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <div class="mobile-socials">
+          <a href="https://github.com/al-bariul" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/al-bariul/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:albariul475@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://wa.me/8801839171208" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for New Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Al Bariul</span>
+          </h1>
+
+          <div class="designation-wrapper">
+            <span class="designation-prefix">I am a </span>
+            <span class="designation-highlight">Frontend Developer</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate about crafting high-performance, pixel-perfect, and user-centric web applications. 
+            Fresh Computer Science graduate blending clean code, creative UI logic, and modern web architectures.
+          </p>
+
+          <!-- Call to Actions -->
+          <div class="hero-cta-group">
+            <a href="Al_Bariul_Resume.pdf" download="Al_Bariul_Resume.pdf" class="btn btn-primary btn-lg shadow-glow">
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="Al_Bariul_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-eye"></i>
+              <span>View CV</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Explore Projects</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-social-bar">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-links-list">
+              <a href="https://github.com/al-bariul" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile" title="GitHub: al-bariul">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/al-bariul/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn: al-bariul">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:albariul475@gmail.com" class="social-btn" aria-label="Email Al Bariul" title="Email: albariul475@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/8801839171208" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp Contact" title="WhatsApp: +8801839171208">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="tel:01839171208" class="social-btn" aria-label="Direct Phone" title="Phone: 01839171208">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo Frame -->
+        <div class="hero-image-wrapper">
+          <div class="photo-card-container">
+            <div class="photo-glow"></div>
+            <div class="photo-frame">
+              <img src="images/profile.jpg" alt="Al Bariul - Frontend Developer" class="hero-photo" />
+            </div>
+
+            <!-- Floating Quick Badges -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="badge-info">
+                <span class="badge-title">Frontend & Web</span>
+                <span class="badge-subtitle">Modern Stack</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon grad-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-info">
+                <span class="badge-title">B.Sc. in CSE</span>
+                <span class="badge-subtitle">Varendra University</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Getting To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A glimpse into my background, my journey through code, and who I am beyond the screen.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story & Journey Column -->
+          <div class="about-story-card card-glass">
+            <h3 class="about-card-title"><i class="fa-solid fa-route gradient-icon"></i> My Programming Journey</h3>
+            <p class="about-lead">
+              I am a <strong>Computer Science and Engineering</strong> student at <strong>Varendra University, Rajshahi</strong>, and have recently completed my graduation.
+            </p>
+            <p>
+              I have hands-on experience in frontend web development using <strong>HTML, CSS, Tailwind CSS, and JavaScript</strong>. 
+              I have built several personal projects focusing on <strong>DOM manipulation, API integration, event handling, form validation, and UI logic</strong>.
+            </p>
+            <p>
+              Currently, I am deepening my JavaScript knowledge and expanding into full-stack development by mastering modern JavaScript back-end concepts (Node.js & Express).
+            </p>
+
+            <div class="work-preference-box">
+              <h4><i class="fa-solid fa-heart gradient-icon"></i> What I Enjoy Doing</h4>
+              <p>
+                I thrive on translating complex logic and creative design concepts into clean, accessible, and fast web experiences. 
+                Whether architecting dynamic client-side state, integrating external RESTful APIs, or optimizing cross-device responsiveness, 
+                I treat every line of code as an opportunity to build seamless digital interactions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Personality & Bio Info Column -->
+          <div class="about-details-column">
+            <!-- Quick Personal Info Grid -->
+            <div class="personal-info-grid">
+              <div class="info-item card-glass">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="info-label">Location</span>
+                  <strong class="info-value">Rajshahi, Bangladesh</strong>
+                </div>
+              </div>
+
+              <div class="info-item card-glass">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div>
+                  <span class="info-label">Degree</span>
+                  <strong class="info-value">B.Sc. in CSE (Completed)</strong>
+                </div>
+              </div>
+
+              <div class="info-item card-glass">
+                <div class="info-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div>
+                  <span class="info-label">Current Focus</span>
+                  <strong class="info-value">Frontend & Full-Stack JS</strong>
+                </div>
+              </div>
+
+              <div class="info-item card-glass">
+                <div class="info-icon"><i class="fa-solid fa-circle-check text-emerald"></i></div>
+                <div>
+                  <span class="info-label">Availability</span>
+                  <strong class="info-value">Ready to Work / Hire</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personality & Interests Outside Programming -->
+            <div class="interests-card card-glass">
+              <h3 class="about-card-title"><i class="fa-solid fa-icons gradient-icon"></i> Life Outside of Code</h3>
+              <p>
+                When I step away from the terminal, I believe in staying active, collaborative, and energized:
+              </p>
+              <div class="interests-tags">
+                <span class="interest-pill">
+                  <i class="fa-solid fa-futbol"></i> Playing Football
+                </span>
+                <span class="interest-pill">
+                  <i class="fa-solid fa-users"></i> Team Sports & Collaboration
+                </span>
+                <span class="interest-pill">
+                  <i class="fa-solid fa-laptop-code"></i> Tech Community Learning
+                </span>
+                <span class="interest-pill">
+                  <i class="fa-solid fa-lightbulb"></i> Exploring Web Innovation
+                </span>
+              </div>
+              <p class="interest-quote">
+                <em>"Playing football teaches me discipline, teamwork, quick decision-making under pressure, and strategic perseverance — qualities I carry directly into every development project I build."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-gears"></i> Technical Stack</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-subtitle">A graphical breakdown of my core technical languages, frameworks, tools, and engineering competencies.</p>
+        </div>
+
+        <!-- Graphical Category Cards -->
+        <div class="skills-grid">
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card card-glass">
+            <div class="category-header">
+              <div class="cat-icon-box cat-languages">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Programming Languages</h3>
+                <span class="cat-subtitle">Foundations of my logic</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <i class="fa-brands fa-js skill-icon-js"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">Advanced Core</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-html5 skill-icon-html"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">Semantic & Accessible</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-css3-alt skill-icon-css"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level">Responsive & Modern</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-database skill-icon-sql"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">Relational Queries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frameworks & Libraries -->
+          <div class="skill-category-card card-glass">
+            <div class="category-header">
+              <div class="cat-icon-box cat-frameworks">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Frameworks & Libraries</h3>
+                <span class="cat-subtitle">Accelerating UI development</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <i class="fa-brands fa-react skill-icon-react"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">React.js</span>
+                  <span class="skill-level">Component Architecture</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-wind skill-icon-tailwind"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">Tailwind CSS</span>
+                  <span class="skill-level">Utility-First Styling</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-palette skill-icon-daisy"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">DaisyUI</span>
+                  <span class="skill-level">UI Component Systems</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-arrows-split-up-and-left skill-icon-router"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">React Router</span>
+                  <span class="skill-level">SPA Routing & Guards</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Platforms -->
+          <div class="skill-category-card card-glass">
+            <div class="category-header">
+              <div class="cat-icon-box cat-tools">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Tools & Platforms</h3>
+                <span class="cat-subtitle">Development workflow & hosting</span>
+              </div>
+            </div>
+            <div class="skill-chips-container">
+              <div class="skill-chip">
+                <i class="fa-brands fa-git-alt skill-icon-git"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">Git</span>
+                  <span class="skill-level">Version Control</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-github skill-icon-github"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">GitHub</span>
+                  <span class="skill-level">Repo & Collaboration</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-fire skill-icon-firebase"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">Firebase</span>
+                  <span class="skill-level">Auth & Backend Services</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-cloud-arrow-up skill-icon-netlify"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">Netlify</span>
+                  <span class="skill-level">CI/CD & Cloud Hosting</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-server skill-icon-mysql"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">MySQL</span>
+                  <span class="skill-level">Database Management</span>
+                </div>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-terminal skill-icon-vscode"></i>
+                <div class="skill-meta">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-level">Primary Environment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Key Concepts & Architectural Strengths -->
+          <div class="skill-category-card card-glass">
+            <div class="category-header">
+              <div class="cat-icon-box cat-concepts">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="cat-title">Core Engineering Concepts</h3>
+                <span class="cat-subtitle">Best practices & problem solving</span>
+              </div>
+            </div>
+            <div class="concepts-list">
+              <div class="concept-badge-item">
+                <span class="concept-bullet"></span>
+                <div>
+                  <strong>DOM Manipulation & Event Handling:</strong>
+                  <p>Fine-tuned dynamic UI updates, state toggling, and interactive user events.</p>
+                </div>
+              </div>
+              <div class="concept-badge-item">
+                <span class="concept-bullet"></span>
+                <div>
+                  <strong>REST API Integration:</strong>
+                  <p>Fetching dynamic datasets via Async/Await, handling errors, and loading states.</p>
+                </div>
+              </div>
+              <div class="concept-badge-item">
+                <span class="concept-bullet"></span>
+                <div>
+                  <strong>Responsive & Mobile-First Design:</strong>
+                  <p>Fluid layouts engineered to look stellar from compact phones to ultra-wide displays.</p>
+                </div>
+              </div>
+              <div class="concept-badge-item">
+                <span class="concept-bullet"></span>
+                <div>
+                  <strong>Form Validation & UI Logic:</strong>
+                  <p>Real-time input validation, sanitization feedback, and resilient UI state handling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATIONAL QUALIFICATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+          <h2 class="section-title">Educational <span class="gradient-text">Qualification</span></h2>
+          <p class="section-subtitle">Academic foundations and foundational engineering coursework.</p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card card-glass">
+            <div class="edu-top-row">
+              <div class="edu-badge-box">
+                <i class="fa-solid fa-university"></i>
+              </div>
+              <div class="edu-header-content">
+                <div class="edu-status-pill">
+                  <i class="fa-solid fa-circle-check"></i> Graduation Completed
+                </div>
+                <h3 class="edu-degree">Bachelor of Science in Computer Science and Engineering (B.Sc. in CSE)</h3>
+                <h4 class="edu-institution">Varendra University, Rajshahi</h4>
+              </div>
+            </div>
+
+            <div class="edu-divider"></div>
+
+            <div class="edu-body">
+              <h5 class="coursework-heading"><i class="fa-solid fa-book-open gradient-icon"></i> Relevant Coursework:</h5>
+              <div class="coursework-tags">
+                <span class="course-pill"><i class="fa-solid fa-globe"></i> E-commerce and Web Programming</span>
+                <span class="course-pill"><i class="fa-solid fa-database"></i> Database Management System (DBMS)</span>
+                <span class="course-pill"><i class="fa-solid fa-network-wired"></i> Data Structures & Algorithms</span>
+                <span class="course-pill"><i class="fa-solid fa-laptop-code"></i> Object-Oriented Programming</span>
+                <span class="course-pill"><i class="fa-solid fa-diagram-project"></i> Software Engineering</span>
+              </div>
+
+              <div class="edu-summary-box">
+                <p>
+                  During my academic years at Varendra University, I developed strong problem-solving capabilities, structured algorithmic thinking, 
+                  and a deep passion for modern web technologies that directly shape my day-to-day software development practices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Featured Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Showcasing real-world web applications built with modern frontend frameworks, API integration, and clean architecture.</p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: Toy-Topia -->
+          <div class="project-card card-glass" data-project-id="toy-topia">
+            <div class="project-thumb-container">
+              <div class="project-thumb-mockup mockup-toy">
+                <div class="mockup-header-bar">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                  <span class="mockup-domain">toy-topia-3f784.web.app</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-badge"><i class="fa-brands fa-react"></i> React + Firebase</div>
+                  <h4 class="mockup-title">Toy-Topia</h4>
+                  <p class="mockup-caption">Empowering local toy sellers with authenticated dashboards & storefronts</p>
+                </div>
+              </div>
+              <div class="project-links-overlay">
+                <a href="https://toy-topia-3f784.web.app/" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/al-bariul/Toy-ToPia" target="_blank" rel="noopener noreferrer" class="overlay-link" title="GitHub Client Repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">DaisyUI</span>
+                <span class="tech-tag">ReactRouter</span>
+              </div>
+              <h3 class="project-card-title">Toy-Topia: Supporting Local Sellers</h3>
+              <p class="project-summary">
+                A full-stack client web app supporting local toy sellers with smart authentication, protected dashboards, dynamic user profile management, and fluid responsive layouts.
+              </p>
+
+              <div class="project-card-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="toy-topia">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://toy-topia-3f784.web.app/" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-sm">
+                  Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Payooo -->
+          <div class="project-card card-glass" data-project-id="payooo">
+            <div class="project-thumb-container">
+              <div class="project-thumb-mockup mockup-payooo">
+                <div class="mockup-header-bar">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                  <span class="mockup-domain">payoo-mobile-banking.github.io</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-badge"><i class="fa-solid fa-wallet"></i> Fintech UI Logic</div>
+                  <h4 class="mockup-title">Payooo Mobile Banking</h4>
+                  <p class="mockup-caption">Interactive online banking with live wallet calculations & DOM toggles</p>
+                </div>
+              </div>
+              <div class="project-links-overlay">
+                <a href="https://al-bariul.github.io/payoo-mobile-banking/" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/al-bariul/payoo-mobile-banking" target="_blank" rel="noopener noreferrer" class="overlay-link" title="GitHub Client Repo">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">DaisyUI</span>
+                <span class="tech-tag">DOM Logic</span>
+              </div>
+              <h3 class="project-card-title">Payooo – Online Mobile Banking</h3>
+              <p class="project-summary">
+                A responsive mobile banking web application simulating real-time balance calculations, section toggles, add-money, and cash-out operations with client UI validation.
+              </p>
+
+              <div class="project-card-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="payooo">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://al-bariul.github.io/payoo-mobile-banking/" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-sm">
+                  Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Green Earth -->
+          <div class="project-card card-glass" data-project-id="green-earth">
+            <div class="project-thumb-container">
+              <div class="project-thumb-mockup mockup-green">
+                <div class="mockup-header-bar">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                  <span class="mockup-domain">glowing-monstera.netlify.app</span>
+                </div>
+                <div class="mockup-body">
+                  <div class="mockup-badge"><i class="fa-solid fa-leaf"></i> Dynamic API + Eco UI</div>
+                  <h4 class="mockup-title">Green Earth</h4>
+                  <p class="mockup-caption">Dynamic frontend application integrating external REST APIs for environmental data</p>
+                </div>
+              </div>
+              <div class="project-links-overlay">
+                <a href="https://glowing-monstera-2a0d33.netlify.app/" target="_blank" rel="noopener noreferrer" class="overlay-link" title="Live Preview">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com/al-bariul" target="_blank" rel="noopener noreferrer" class="overlay-link" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+              <h3 class="project-card-title">Green Earth – Eco Frontend Web App</h3>
+              <p class="project-summary">
+                A clean and interactive frontend web application integrating external APIs to fetch and render dynamic environmental datasets with responsive DOM manipulation.
+              </p>
+
+              <div class="project-card-actions">
+                <button class="btn btn-outline btn-sm open-modal-btn" data-project="green-earth">
+                  <span>View Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="https://glowing-monstera-2a0d33.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-link btn-sm">
+                  Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED PROJECT MODAL DIALOG -->
+    <div class="project-modal-backdrop" id="project-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="project-modal card-glass">
+        <!-- Close Button -->
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+
+        <div class="modal-header">
+          <div class="modal-tags" id="modal-tags"></div>
+          <h2 class="modal-title" id="modal-title">Project Title</h2>
+          <p class="modal-subtitle" id="modal-subtitle">Project Subtitle</p>
+        </div>
+
+        <div class="modal-links-row">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-live-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Project
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" id="modal-github-link">
+            <i class="fa-brands fa-github"></i> GitHub (Client)
+          </a>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-section">
+            <h4><i class="fa-solid fa-microchip gradient-icon"></i> Main Technology Stack</h4>
+            <div class="modal-tech-pills" id="modal-tech-stack"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4><i class="fa-solid fa-file-lines gradient-icon"></i> Project Description & Features</h4>
+            <div id="modal-description" class="modal-text-content"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4><i class="fa-solid fa-triangle-exclamation text-amber gradient-icon"></i> Challenges Faced & Solutions</h4>
+            <div id="modal-challenges" class="modal-text-content"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4><i class="fa-solid fa-rocket gradient-icon"></i> Potential Improvements & Future Plans</h4>
+            <div id="modal-future" class="modal-text-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+          <p class="section-subtitle">Interested in collaborating or hiring me for your team? Reach out through any of the channels below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details Cards -->
+          <div class="contact-cards-column">
+            <!-- Email Card -->
+            <a href="mailto:albariul475@gmail.com" class="contact-info-card card-glass">
+              <div class="contact-card-icon icon-email">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-type">Email Address</span>
+                <strong class="contact-val">albariul475@gmail.com</strong>
+                <span class="contact-action-hint">Click to send an email &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:01839171208" class="contact-info-card card-glass">
+              <div class="contact-card-icon icon-phone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-type">Phone Number</span>
+                <strong class="contact-val">01839171208</strong>
+                <span class="contact-action-hint">Available for calls &rarr;</span>
+              </div>
+            </a>
+
+            <!-- WhatsApp Card -->
+            <a href="https://wa.me/8801839171208" target="_blank" rel="noopener noreferrer" class="contact-info-card card-glass">
+              <div class="contact-card-icon icon-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-type">WhatsApp Number</span>
+                <strong class="contact-val">+880 1839171208</strong>
+                <span class="contact-action-hint">Instant chat available &rarr;</span>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-info-card card-glass">
+              <div class="contact-card-icon icon-location">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-card-body">
+                <span class="contact-type">Current Location</span>
+                <strong class="contact-val">Rajshahi, Bangladesh</strong>
+                <span class="contact-action-hint">Open to remote & on-site positions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Message Form -->
+          <div class="contact-form-card card-glass">
+            <h3 class="contact-form-title"><i class="fa-solid fa-message gradient-icon"></i> Send a Direct Message</h3>
+            <p class="contact-form-intro">Have a project or opportunity? Drop your details and I will get back to you promptly.</p>
+
+            <form id="contact-form" class="interactive-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="form-name" name="name" placeholder="John Doe" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email Address</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="form-email" name="email" placeholder="john@example.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <input type="text" id="form-subject" name="subject" placeholder="Frontend Developer Opportunity" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <div class="textarea-with-icon">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="form-message" name="message" rows="4" placeholder="Hello Al Bariul, I'd like to discuss..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-full btn-lg" id="submit-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-feedback" id="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-accent">&lt;</span>Al Bariul<span class="logo-accent"> /&gt;</span>
+          </a>
+          <p class="footer-bio">
+            Frontend Developer dedicated to creating interactive, robust, and accessible user experiences on the web.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h4 class="footer-heading">Social Profiles</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/al-bariul" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/al-bariul/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:albariul475@gmail.com" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/8801839171208" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <div class="footer-resume-cta">
+            <a href="Al_Bariul_Resume.pdf" download="Al_Bariul_Resume.pdf" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Al Bariul. All rights reserved. Crafted with clean HTML, CSS & JavaScript.</p>
+        <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
